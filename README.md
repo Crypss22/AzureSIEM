@@ -12,7 +12,7 @@ Project consists of a SIEM I made utilizing Microsoft's Azure cloud platform. Th
 
 <h2>Environments Used </h2>
 
-- <b>Windows 11 Virtual Machine</b> (21H2)
+- <b>Windows 11 Virtual Machine</b>
 
 <h2>Program walk-through:</h2>
 
