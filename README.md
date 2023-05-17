@@ -1,4 +1,16 @@
-<h1>Azure Honeypot</h1> <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pinclipart.com%2Fpicdir%2Fmiddle%2F556-5564454_transparent-background-honey-png-clipart.png&f=1&nofb=1&ipt=b50474fde0b2480735b97258e02148c05821657f73806195541c5750e4820b1d&ipo=images" height="80%" width="80%"/>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.freepik.com%2Ffree-photo%2Fdripping-honey-seamlessly-repeatable-from-top-white-with-copyspace-text_185216-15.jpg&f=1&nofb=1&ipt=29ec6cd0b7b8eb9f6a69d2bac5ab1ca89707f9df9b818cc34a8eb6c37b87bbe4&ipo=images");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+<h1>Azure Honeypot</h1>
 
 <h2>Description</h2>
 This project consisted of making a SIEM through Microsoft's cloud platform, Azure. Through my vulnerable honeypot, I was able to capture brute-force attacks onto my Virtual Machine and aggregate them through log analytics and plot them through geolocation onto a visual map.
