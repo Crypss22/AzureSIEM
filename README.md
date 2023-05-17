@@ -19,7 +19,8 @@ Below I included screenshots with explanations of the steps conducted.
 
 <p align="center">
 <br/>
-<img src="https://imgur.com/7dd6qeo" height="80%" width="80%" alt="To begin, I created a Resource Group that would contain all components of the SIEM."/>
+To begin, I created a Resource Group that would contain all components of the SIEM.
+<img src="https://imgur.com/7dd6qeo" height="80%" width="80%" alt="Resource Group"/>
 <br />
 <br />
 Select the disk:  <br/>
