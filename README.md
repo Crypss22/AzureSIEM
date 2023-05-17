@@ -19,7 +19,7 @@ Below I included screenshots with explanations of the steps conducted.
 
 <p align="center">
 Launch the utility: <br/>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/a/7zWK5xC" height="80%" width="80%" alt="To begin, I created a Resource Group that would contain all components of the SIEM."/>
 <br />
 <br />
 Select the disk:  <br/>
