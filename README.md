@@ -18,7 +18,6 @@ Below I included screenshots with explanations of the steps conducted.
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
 <img src="https://imgur.com/a/7zWK5xC" height="80%" width="80%" alt="To begin, I created a Resource Group that would contain all components of the SIEM."/>
 <br />
 <br />
