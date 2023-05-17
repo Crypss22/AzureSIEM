@@ -1,8 +1,7 @@
-<h1>Microsoft Azure SIEM</h1>
+<h1>Azure Honeypot</h1>
 
 <h2>Description</h2>
 This project consisted of making a SIEM through Microsoft's cloud platform, Azure. Through my vulnerable honeypot, I was able to capture brute-force attacks onto my Virtual Machine and aggregate them through log analytics and plot them through geolocation onto a visual map.
-
 Below I included screenshots with explanations of the steps conducted.
 <br />
 
