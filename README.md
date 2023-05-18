@@ -2,36 +2,39 @@
 </h1>
 
    This project consisted of making a SIEM through Microsoft's cloud platform, Azure. Through my vulnerable honeypot, I was able to capture brute-force attacks onto my Virtual Machine and aggregate them through log analytics and plot them through geolocation onto a visual map.
-Below I included screenshots with explanations of the steps conducted.
 
-
+<br /> Below are screenshots of the project and some crucial steps that helped with geolocating and visualizing the brute-force attacks.
 
 <h2>Utilities Used</h2>
 
 - <b>Microsoft Azure</b> 
+- <a href="ipgeolocation.io">Ipgeolocation.io's</a> <b>Third-party API</b>
 
 
 <h2>Environments Used </h2>
 
 - <b>Windows 11 Virtual Machine</b>
 
-<h2>Program walk-through:</h2>
+<h2>Project walk-through:</h2>
 
 <p align="center">
-To begin, I created a Resource Group that would contain all the components of the SIEM. <br/>
-<img src="https://imgur.com/7dd6qeo.png" height="110%" width="80%" alt="Resource Group" style="border: 1px solid black;">
+   <b>This resource provided an API key that granted geolocation via a custom powershell script that can be found <a href="https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1">here</a><br/>
+<img src="https://imgur.com/68u14nf.png" height="50%" width="50%" alt="Resource Group"/>
+<img src="https://imgur.com/u1zHzb7.png" height="150%" width="150%" alt="Custom Powershell Script"/>
+This custom powershell script interacts with Windows Event Viewer and searches for Audit Failures with the Event ID 4625 that signify a failed login attempt
 <br />
 <br />
-Select the disk:  <br/>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>This custom inbound rule allowed all incoming traffic from any source on any port</b>  <br/>
+<img src="https://imgur.com/yedIVhl.png" height="40%" width="40%" alt="Custom Inbound Rule"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   <b>In order to allow ICMP echo requests and make the VM discoverable, all profiles on the firewall were disabled</b> 
+<br/>
+<img src="https://imgur.com/PUo4NVP.png" height="80%" width="80%" alt="VM linked to LAW"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   <b>The powershell script was run to collect sample brute-force attacks and even some live attacks were caught instantly. These were exported to create a custom log on Azure to familiarize the SIEM</b>  <br/>
+<img src="https://imgur.com/eGo2uKc.png" height="250px" width="80%" alt="Failed RDP on Powershell"/>
 <br />
 <br />
 Wait for process to complete (may take some time):  <br/>
