@@ -33,7 +33,7 @@ This custom powershell script interacts with Windows Event Viewer and searches f
 <img src="https://imgur.com/PUo4NVP.png" height="80%" width="80%" alt="VM linked to LAW"/>
 <br />
 <br />
-   <b>The powershell script was run to collect sample brute-force attacks and even some live attacks were caught instantly. These were exported to create a custom log on Azure to familiarize the SIEM</b>  <br/>
+   <b>The powershell script was run to collect sample brute-force attacks and even some live attacks were caught instantly. These were exported to create a custom log on Azure to familiarize it with the format.</b>  <br/>
 <img src="https://imgur.com/eGo2uKc.png" height="250px" width="80%" alt="Failed RDP on Powershell"/>
 <br />
 <br />
