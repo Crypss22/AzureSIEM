@@ -1,7 +1,7 @@
 <h1>Azure Honeypot   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdclipartall.com%2Fimages%2Fhoney-clipart-honey-bank-vector-illustrations-vector-art-illustration-612x516.jpg&f=1&nofb=1&ipt=783ee1997d3312abcdab10930461c1965fc07d1da03794365028bdeb2a8c6898&ipo=images" alt="Image Description" width="150" height="100">
 </h1>
 
-   This project consisted of making a SIEM through Microsoft's cloud platform, Azure. Through my vulnerable honeypot, I was able to capture brute-force attacks onto my Virtual Machine and aggregate them through log analytics and plot them through geolocation onto a visual map.
+   This project consisted of making a SIEM through Microsoft's cloud platform, Azure. Using my vulnerable honeypot, I captured brute-force attacks on my Virtual Machine, and analyzed them using log analytics. I then plotted the attacks' geolocation data on a visual map.
 
 <br /> Below are screenshots of the project and some crucial steps that helped with geolocating and visualizing the brute-force attacks.
 
@@ -37,7 +37,7 @@ This custom powershell script interacts with Windows Event Viewer and searches f
 <img src="https://imgur.com/eGo2uKc.png" height="250px" width="80%" alt="Failed RDP on Powershell"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
+The log was put into a custom table to familiarize Azure with the format in which it should organize future incoming attacks.  <br/>
 <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
