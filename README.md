@@ -38,15 +38,15 @@ This custom powershell script interacts with Windows Event Viewer and searches f
 <br />
 <br />
 The log was put into a custom table to familiarize Azure with the format in which it should organize future incoming attacks.  <br/>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt="tbd"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+tbd  <br/>
+<img src="" height="80%" width="80%" alt="tbd"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+tbd:  <br/>
+<img src="" height="80%" width="80%" alt="tbd"/>
 </p>
 
 <!--
