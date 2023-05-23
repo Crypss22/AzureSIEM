@@ -6,9 +6,7 @@
 <br /> Below are screenshots of the project and some crucial steps that helped with geolocating and visualizing the brute-force attacks.
 
 <h2>Utilities Used</h2>
-
-- <b>Microsoft Azure</b> 
-- <a href="ipgeolocation.io">Ipgeolocation.io's</a> <b>Third-party API</b>
+4
 
 
 <h2>Environments Used </h2>
@@ -18,23 +16,34 @@
 <h2>Project walk-through:</h2>
 
 <p align="center">
-   <b>This resource provided an API key that granted geolocation via a custom powershell script that can be found <a href="https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1">here</a><br/>
-<img src="https://imgur.com/68u14nf.png" height="50%" width="50%" alt="Resource Group"/>
-<img src="https://imgur.com/u1zHzb7.png" height="150%" width="150%" alt="Custom Powershell Script"/>
-This custom powershell script interacts with Windows Event Viewer and searches for Audit Failures with the Event ID 4625 that signify a failed login attempt
-<br />
-<br />
-<b>This custom inbound rule allowed all incoming traffic from any source on any port</b>  <br/>
-<img src="https://imgur.com/yedIVhl.png" height="40%" width="40%" alt="Custom Inbound Rule"/>
-<br />
-<br />
-   <b>In order to allow ICMP echo requests and make the VM discoverable, all profiles on the firewall were disabled</b> 
+   <b>A resource group was created to link the components of the project together to include the Virtual Machine, the Log Analytics Workspace, and the SIEM, Microsoft Sentinel.<br/>
+<img src="https://imgur.com/F3A34ci.png" height=" width="80" alt="Resource Group"/>                                                 
+      </p>
+   <br />
+<p align="center">
+      <b>In order to allow ICMP echo requests and make the VM discoverable, all profiles on the firewall were disabled</b> 
 <br/>
 <img src="https://imgur.com/PUo4NVP.png" height="80%" width="80%" alt="VM linked to LAW"/>
+      </p>
 <br />
 <br />
-   <b>The powershell script was run to collect sample brute-force attacks and even some live attacks were caught instantly. These were exported to create a custom log on Azure to familiarize it with the format.</b>  <br/>
-<img src="https://imgur.com/eGo2uKc.png" height="250px" width="80%" alt="Failed RDP on Powershell"/>
+
+<p align="center">
+This custom inbound rule allowed all incoming traffic from any source on any port
+<br/>
+<img src="https://imgur.com/yedIVhl.png" height="40%" width="40%" alt="Custom Inbound Rule"/>
+      </p>
+<br/>
+<br/>
+<p align="center">
+   <b>This resource provided an API key that granted the ability to geolocate attacks via a custom powershell script<br/>
+<img src="https://imgur.com/68u14nf.png" height="50%" width="50%" alt="Resource Group"/>
+      </p>
+      <p align="center">
+On the Virtual Machine I created this custom powershell script using AI,  and had it export a .json log file that Azure was familiar with formatting into a custom log. The script interacts with Windows Event Viewer on the VM, and searches for Audit Failures with the Event ID 4625 that signify a failed login attempt.</br>   
+    <img src="https://imgur.com/LxkZykA.png" height="70%" width="70%" alt="Custom Powershell Script"/>
+      </p>
+<br />
 <br />
 <br />
 The log was put into a custom table to familiarize Azure with the format in which it should organize future incoming attacks.  <br/>
@@ -45,7 +54,7 @@ tbd  <br/>
 <img src="" height="80%" width="80%" alt="tbd"/>
 <br />
 <br />
-tbd:  <br/>
+Finally, we were able to visualize the attacks on a worldmap. The   <br/>
 <img src="" height="80%" width="80%" alt="tbd"/>
 </p>
 
