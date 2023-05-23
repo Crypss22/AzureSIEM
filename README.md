@@ -6,8 +6,7 @@
 <br /> Below are screenshots of the project and some crucial steps that helped with geolocating and visualizing the brute-force attacks.
 
 <h2>Utilities Used</h2>
-4
-
+- Microsoft Azure Cloud Platform
 
 <h2>Environments Used </h2>
 
@@ -17,21 +16,18 @@
 
 <p align="center">
    <b>A resource group was created to link the components of the project together to include the Virtual Machine, the Log Analytics Workspace, and the SIEM, Microsoft Sentinel.<br/>
-<img src="https://imgur.com/F3A34ci.png" height=" width="80" alt="Resource Group"/>                                                 
+<img src="https://imgur.com/F3A34ci.png" height="100%" width="100%" alt="Resource Group"/>                                                 
       </p>
    <br />
 <p align="center">
+After creating the VM a custom inbound rule was made allowing all incoming traffic from all sources on all ports.
+<br/>
+<img src="https://imgur.com/yedIVhl.png" height="40%" width="40%" alt="Custom Inbound Rule"/>
+      </p>
+      <p align="center">
       <b>In order to allow ICMP echo requests and make the VM discoverable, all profiles on the firewall were disabled</b> 
 <br/>
 <img src="https://imgur.com/PUo4NVP.png" height="80%" width="80%" alt="VM linked to LAW"/>
-      </p>
-<br />
-<br />
-
-<p align="center">
-This custom inbound rule allowed all incoming traffic from any source on any port
-<br/>
-<img src="https://imgur.com/yedIVhl.png" height="40%" width="40%" alt="Custom Inbound Rule"/>
       </p>
 <br/>
 <br/>
