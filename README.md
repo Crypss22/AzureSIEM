@@ -33,8 +33,9 @@ After creating the VM a custom inbound port rule was made for it allowing all in
 <br/>
 <br/>
       <p align="center">
-Following, on the VM I created this custom powershell script using AI, and had it export a .json log file that Azure was familiar with formatting into a custom log. The script interacts with Windows Event Viewer on the VM, and searches for Audit Failures with the Event ID 4625 that signify a failed login attempt.
-The script collected information from the failed login attempts and placed them under the corresponding tables. Using that very same information, the script utilized an API (shown below) that granted the ability to geolocate the attacks through latitude and longitude.
+Following, I created a custom PowerShell script on the virtual machine utilizing AI. The script interacts with the Windows Event Viewer on the VM and specifically targets Audit Failures with Event ID 4625, which indicate failed login attempts. The script collects relevant information from these failed login attempts and exports it to a JSON log file in a format recognized by Azure.
+      <p align="center">
+This custom log file is then utilized within Azure to create a custom log. The script extracts the collected information and organizes it into corresponding tables for further analysis. Additionally, the script leverages an API (shown below) that provides geolocation capabilities, allowing the script to determine the latitude and longitude of the attack sources.
 </br>   
     <img src="https://imgur.com/LxkZykA.png" height="70%" width="70%" alt="Custom Powershell Script"/>
       </p>
@@ -44,16 +45,18 @@ The script collected information from the failed login attempts and placed them 
 <br />
 <br />
 <br />
-The log was put into a custom table to familiarize Azure with the format in which it should organize future incoming attacks.  <br/>
-<img src="" height="80%" width="80%" alt="tbd"/>
+<p align="center">
+Finally, using the SIEM solution, Microsoft Sentinel, I created a custom workbook and utilized AI to create a query in order to retrieve the custom log file from the Log Analytics Workspace and extract its valuable tables.
+<p align="center">
+After successfully pulling the tables, I utilized the world map visualization feature offered by the workbook. By mapping the attack sources based on their latitude and longitude coordinates, I was able to represent the data geographically. To provide a clearer perspective, I adjusted the size of the plotted markers based on the number of attacks originating from each general area and country. <br/>
+   </p>
+<img src="https://imgur.com/Ho9iToa.png" height="80%" width="80%" alt="law query"/>
 <br />
 <br />
-tbd  <br/>
-<img src="" height="80%" width="80%" alt="tbd"/>
-<br />
-<br />
-Finally, we were able to visualize the attacks on a worldmap. The   <br/>
-<img src="" height="80%" width="80%" alt="tbd"/>
+<p align="center">
+   <img src="https://imgur.com/oDxIdFv.png" height="80%" width="80%" alt="world map"/> <br />
+Almost instantly, an absurb amount of attacks flowed in deriving from Maldova; 11.5k as you can see. Although information of these attacks were provided like the others, these did not plot correctly and were instead labeled as "0" and place geographically in western Africa.  <br/>
+   </p>
 </p>
 
 <!--
