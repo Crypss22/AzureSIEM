@@ -6,7 +6,8 @@
 <br /> Below are screenshots of the project and some crucial steps that helped with geolocating and visualizing the brute-force attacks.
 
 <h2>Utilities Used</h2>
-- Microsoft Azure Cloud Platform
+
+- <b>Microsoft Azure Cloud Platform</b>
 
 <h2>Environments Used </h2>
 
@@ -20,24 +21,25 @@
       </p>
    <br />
 <p align="center">
-After creating the VM a custom inbound rule was made allowing all incoming traffic from all sources on all ports.
+After creating the VM a custom inbound port rule was made for it allowing all incoming traffic.
 <br/>
 <img src="https://imgur.com/yedIVhl.png" height="40%" width="40%" alt="Custom Inbound Rule"/>
       </p>
       <p align="center">
-      <b>In order to allow ICMP echo requests and make the VM discoverable, all profiles on the firewall were disabled</b> 
+      <b>In order to allow ICMP echo requests and make the VM discoverable, the firewall on the VM itself was disabled.</b> 
 <br/>
 <img src="https://imgur.com/PUo4NVP.png" height="80%" width="80%" alt="VM linked to LAW"/>
       </p>
 <br/>
 <br/>
-<p align="center">
-   <b>This resource provided an API key that granted the ability to geolocate attacks via a custom powershell script<br/>
-<img src="https://imgur.com/68u14nf.png" height="50%" width="50%" alt="Resource Group"/>
+      <p align="center">
+Following, on the VM I created this custom powershell script using AI, and had it export a .json log file that Azure was familiar with formatting into a custom log. The script interacts with Windows Event Viewer on the VM, and searches for Audit Failures with the Event ID 4625 that signify a failed login attempt.
+The script collected information from the failed login attempts and placed them under the corresponding tables. Using that very same information, the script utilized an API (shown below) that granted the ability to geolocate the attacks through latitude and longitude.
+</br>   
+    <img src="https://imgur.com/LxkZykA.png" height="70%" width="70%" alt="Custom Powershell Script"/>
       </p>
       <p align="center">
-On the Virtual Machine I created this custom powershell script using AI,  and had it export a .json log file that Azure was familiar with formatting into a custom log. The script interacts with Windows Event Viewer on the VM, and searches for Audit Failures with the Event ID 4625 that signify a failed login attempt.</br>   
-    <img src="https://imgur.com/LxkZykA.png" height="70%" width="70%" alt="Custom Powershell Script"/>
+<img src="https://imgur.com/68u14nf.png" height="50%" width="50%" alt="Resource Group"/>
       </p>
 <br />
 <br />
