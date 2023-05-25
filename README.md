@@ -56,7 +56,7 @@ After successfully pulling the tables, I utilized the world map visualization fe
 <br />
 <p align="center">
    <img src="https://imgur.com/oDxIdFv.png" height="80%" width="80%" alt="world map"/> <br />
-<b> Almost instantly, an absurb amount of attacks flowed in deriving from Maldova; 11.5k as you can see. Although information of these attacks were provided like the others, these did not plot correctly and were instead labeled as "0" and place geographically in western Africa. Although not flawless, this tool provides aid in visualizing attacks and assisting in further statistics and analytics.<b>  <br/>
+<b> Almost instantly, an absurb amount of attacks flowed in deriving from Maldova; 11.5k as you can see. Although information of these attacks were provided like the others, these did not plot correctly and were instead labeled as "0" and place geographically in western Africa. Although not flawless, this tool provides aid in visualizing attacks and assisting in further analytics.<b>  <br/>
    </p>
 </p>
 
