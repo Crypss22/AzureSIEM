@@ -1,9 +1,9 @@
 <h1>Azure Honeypot   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdclipartall.com%2Fimages%2Fhoney-clipart-honey-bank-vector-illustrations-vector-art-illustration-612x516.jpg&f=1&nofb=1&ipt=783ee1997d3312abcdab10930461c1965fc07d1da03794365028bdeb2a8c6898&ipo=images" alt="Image Description" width="150" height="100">
 </h1>
 
-   This project consisted of making a SIEM through Microsoft's cloud platform, Azure. Using my vulnerable honeypot, I captured brute-force attacks on my Virtual Machine, and analyzed them using log analytics. I then plotted the attacks' geolocation data on a visual map. <br />
+   This project consisted of making a SIEM through Microsoft's cloud platform, Azure. Configuring a vulnerable honeypot, I captured brute-force attacks on my Virtual Machine, and analyzed them using log analytics in Azure. I then plotted the attacks' geolocation data on a visual map. <br />
    <br />
-   This is my second time building this project and due to Azure updating and removing features that were previously used, it was a bit challenging. Wth the help of AI I was able to create solutions and ultimately complete it.
+   This is my second time building this project and due to Azure updating and removing features that were previously used, it was a bit challenging. With the help of AI I was able to create solutions and ultimately complete it.
 
 <h2>Utilities Used</h2>
 
