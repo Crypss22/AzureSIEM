@@ -21,7 +21,7 @@
       </p>
    <br />
 <p align="center">
-After creating the VM a custom inbound port rule was made for it allowing all incoming traffic.
+<b>After creating the VM, a custom inbound port rule was made for it allowing all incoming traffic.</b>
 <br/>
 <img src="https://imgur.com/yedIVhl.png" height="40%" width="40%" alt="Custom Inbound Rule"/>
       </p>
@@ -33,9 +33,9 @@ After creating the VM a custom inbound port rule was made for it allowing all in
 <br/>
 <br/>
       <p align="center">
-Following, I created a custom PowerShell script on the virtual machine utilizing AI. The script interacts with the Windows Event Viewer on the VM and specifically targets Audit Failures with Event ID 4625, which indicate failed login attempts. The script collects relevant information from these failed login attempts and exports it to a JSON log file in a format recognized by Azure.
+<b>Following, I created a custom PowerShell script on the virtual machine utilizing AI. The script interacts with the Windows Event Viewer on the VM and specifically targets Audit Failures with Event ID 4625, which indicate failed login attempts. The script collects relevant information from these failed login attempts and exports it to a JSON log file in a format recognized by Azure.
       <p align="center">
-This custom log file is then utilized within Azure to create a custom log. The script extracts the collected information and organizes it into corresponding tables for further analysis. Additionally, the script leverages an API (shown below) that provides geolocation capabilities, allowing the script to determine the latitude and longitude of the attack sources.
+The script extracts the collected information from Windows Event Viewer and organizes it into corresponding tables for further analysis. Additionally, the script leverages an API (shown below) that provides geolocation capabilities, allowing the script to determine the latitude and longitude of the attack sources. The log file that is created from this script is then utilized as a sample file in the Log Analytics Workspace for formatting purposes.</b>
 </br>   
     <img src="https://imgur.com/LxkZykA.png" height="70%" width="70%" alt="Custom Powershell Script"/>
       </p>
@@ -55,7 +55,7 @@ After successfully pulling the tables, I utilized the world map visualization fe
 <br />
 <p align="center">
    <img src="https://imgur.com/oDxIdFv.png" height="80%" width="80%" alt="world map"/> <br />
-Almost instantly, an absurb amount of attacks flowed in deriving from Maldova; 11.5k as you can see. Although information of these attacks were provided like the others, these did not plot correctly and were instead labeled as "0" and place geographically in western Africa.  <br/>
+ost instantly, an absurb amount of attacks flowed in deriving from Maldova; 11.5k as you can see. Although information of these attacks were provided like the others, these did not plot correctly and were instead labeled as "0" and place geographically in western Africa.  <br/>
    </p>
 </p>
 
