@@ -5,7 +5,7 @@
 
 <h2>Utilities Used</h2>
 
-- <b>Microsoft Azure Cloud Platform</b>
+- <b>Microsoft Sentinel</b>
 
 <h2>Environments Used </h2>
 
@@ -44,7 +44,7 @@ The script extracts the collected information from Windows Event Viewer and orga
 <br />
 <br />
 <p align="center">
-<b>Finally, using the SIEM solution, Microsoft Sentinel, I created a custom workbook and utilized AI to create a query in order to retrieve the custom log file from the Log Analytics Workspace and extract its valuable tables.
+<b>Finally, I created a custom workbook and again utilized AI to create a query in order to retrieve the custom log file from the Log Analytics Workspace and extract its valuable tables.
 <p align="center">
 After successfully pulling the tables, I utilized the world map visualization feature offered by the workbook. By mapping the attack sources based on their latitude and longitude coordinates, I was able to represent the data geographically. To provide a clearer perspective, I adjusted the size of the plotted markers based on the number of attacks originating from each general area and country.
    </b> <br/>
@@ -53,17 +53,7 @@ After successfully pulling the tables, I utilized the world map visualization fe
 <br />
 <br />
 <p align="center">
-   <img src="https://imgur.com/oDxIdFv.png" height="80%" width="80%" alt="world map"/> <br />
-<b> Almost instantly, an absurb amount of attacks flowed in deriving from Maldova; 11.5k as you can see. Although information of these attacks was provided, these did not plot correctly and were instead labeled as "0" and place geographically in western Africa. Though not flawless, this tool provides aid in visualizing attacks and assisting in further analytics.<b>  <br/>
+   <img src="https://i.postimg.cc/G20G3zsc/attacks.png" height="80%" width="80%" alt="world map"/> <br />
+<b> Almost instantly an abundance of brute-force attempts were received. Leveraging visualizations to portray attacks by magnitude is crucial and can provide a clear understanding of the threat landscape, trends, and patterns. It is a valuable tool and certainly helps with decisions moving forward.<b>  <br/>
    </p>
-</p>
-
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+   <p></p>
