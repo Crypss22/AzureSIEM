@@ -33,18 +33,18 @@
       <p align="center">
 <b>Following, I created a custom PowerShell script on the virtual machine utilizing AI. The script interacts with the Windows Event Viewer on the VM and specifically targets Audit Failures with Event ID 4625, which indicate failed login attempts. The script collects relevant information from these failed login attempts and exports it to a JSON log file in a format recognized by Azure.
       <p align="center">
-The script extracts the collected information from Windows Event Viewer and organizes it into corresponding tables for further analysis. Additionally, the script leverages an API (shown below) that provides geolocation capabilities, allowing the script to determine the latitude and longitude of the attack sources. The log file that is created from this script is then utilized as a sample file in the Log Analytics Workspace for formatting purposes.</b>
+The script extracts the collected information from Windows Event Viewer and organizes it into corresponding tables for further analysis. Additionally, the script leverages an API (shown below) that provides geolocation capabilities, allowing the script to determine the latitude and longitude of the attack sources. The log file that is created from this script is then utilized as a sample file in the Log Analytics Workspace.</b>
 </br>   
     <img src="https://imgur.com/LxkZykA.png" height="70%" width="70%" alt="Custom Powershell Script"/>
       </p>
       <p align="center">
-<img src="https://imgur.com/68u14nf.png" height="50%" width="50%" alt="Resource Group"/>
+<img src="https://imgur.com/68u14nf.png" height="50%" width="50%" alt="API"/>
       </p>
 <br />
 <br />
 <br />
 <p align="center">
-<b>Finally, I created a custom workbook and again utilized AI to create a query in order to retrieve the custom log file from the Log Analytics Workspace and extract its valuable tables.
+<b>Finally, I created a custom workbook and once again utilized AI to create a query in order to retrieve the custom log file from the Log Analytics Workspace and extract it's tables.
 <p align="center">
 After successfully pulling the tables, I utilized the world map visualization feature offered by the workbook. By mapping the attack sources based on their latitude and longitude coordinates, I was able to represent the data geographically. To provide a clearer perspective, I adjusted the size of the plotted markers based on the number of attacks originating from each general area and country.
    </b> <br/>
@@ -54,6 +54,6 @@ After successfully pulling the tables, I utilized the world map visualization fe
 <br />
 <p align="center">
    <img src="https://i.postimg.cc/G20G3zsc/attacks.png" height="80%" width="80%" alt="world map"/> <br />
-<b> Almost instantly an abundance of brute-force attempts were received. Leveraging visualizations to portray attacks by magnitude is crucial and can provide a clear understanding of the threat landscape, trends, and patterns. It is a valuable tool and certainly helps with decisions moving forward.<b>  <br/>
+<b> Almost instantly, an abundance of brute-force attempts were received. Leveraging visualizations to portray attacks by magnitude was crucial, and it provided a clear understanding of the threat landscape, trends, and patterns.
    </p>
-   <p></p>
+   <p>This project proved to be challenging as I faced multiple roadblocks throughout. Providing ChatGPT 3 with a prompt in which it would create a functional powershell script and query was definitely one of them. Ultimately SIEMs continue to provide the ability to analyze data and can certainly assist in decision-making moving forward.    </p>
