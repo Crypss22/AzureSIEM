@@ -9,7 +9,7 @@
 
 <h2>Environments Used </h2>
 
-- <b>Windows 11 Virtual Machine</b>
+- <b>Windows 11</b>
 
 <h2>Project walk-through:</h2>
 
