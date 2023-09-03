@@ -31,7 +31,7 @@
 <br/>
 <br/>
       <p align="center">
-<b>Following, I created a custom PowerShell script on the virtual machine utilizing AI. The script interacts with the Windows Event Viewer on the VM and specifically targets Audit Failures with Event ID 4625, which indicate failed login attempts. The script collects relevant information from these failed login attempts and exports it to a JSON log file in a format recognized by Azure.
+<b>Following, I created a custom PowerShell script to be used on the virtual machine utilizing AI. The script interacts with the Windows Event Viewer on the VM and specifically targets Audit Failures with Event ID 4625, which indicates a failed login attempt. The script collects relevant information from these failed login attempts and exports it to a JSON log file in a format recognized by Azure.
       <p align="center">
 The script extracts the collected information from Windows Event Viewer and organizes it into corresponding tables for further analysis. Additionally, the script leverages an API (shown below) that provides geolocation capabilities, allowing the script to determine the latitude and longitude of the attack sources. The log file that is created from this script is then utilized as a sample file in the Log Analytics Workspace.</b>
 </br>   
