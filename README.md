@@ -2,6 +2,8 @@
 </h1>
 
    This project consisted of utilizing Microsoft Azure's SIEM platform, Sentinel, to monitor brute-force attacks onto a vulnerable virtual machine and further analyze them through log analytics. These attacks were then visualized through the use of a geographical dashboard. <br />
+   
+   </br>
 
 <h2>Utilities Used</h2>
 
@@ -56,4 +58,4 @@ After successfully pulling the tables, I utilized the world map visualization fe
    <img src="https://i.postimg.cc/G20G3zsc/attacks.png" height="80%" width="80%" alt="world map"/> <br />
 <b> Almost instantly, an abundance of brute-force attempts were received. Leveraging visualizations to portray attacks by magnitude was crucial, and it provided a clear understanding of the threat landscape, trends, and patterns.
    </p>
-   <p>This project proved to be challenging as I faced multiple roadblocks throughout. Providing ChatGPT 3 with a prompt in which it would create a functional powershell script and query was definitely one of them. Ultimately SIEMs continue to provide the ability to analyze data and can certainly assist in decision-making moving forward.    </p>
+   <p>This project proved to be challenging as I faced multiple roadblocks throughout. Providing ChatGPT 3 with a prompt in which it would create a functional powershell script and query was definitely one of them. Honeypots prove to be an efficient way of attracting attackers and in doing so, learning from their tactics, techniques, and procedures. From behavorial analysis defenders can better prepare their organization from threat actors and better secure data residing on systems. </p>
