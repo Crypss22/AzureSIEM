@@ -21,21 +21,21 @@
       </p>
    <br />
 <p align="center">
-<b>After creating the VM, a custom inbound port rule on the firewall was configured to allow all incoming traffic.</b>
+<b>In the VM's settings on Azure, I configured the firewall to allow traffic on all ports.</b>
 <br/>
 <img src="https://imgur.com/yedIVhl.png" height="40%" width="40%" alt="Custom Inbound Rule"/>
       </p>
       <p align="center">
-      <b>In order to allow ICMP echo requests and make the VM discoverable, the firewall on the VM itself was disabled.</b> 
+      <b>And on the Windows VM itself, disabled the firewall to allow ICMP echo requests, making it discoverable, and baiting all threat actors looking for some low-hanging fruit.</b> 
 <br/>
 <img src="https://imgur.com/PUo4NVP.png" height="80%" width="80%" alt="VM linked to LAW"/>
       </p>
 <br/>
 <br/>
       <p align="center">
-<b>Following, I created a custom PowerShell script to be used on the virtual machine utilizing AI. The script interacts with the Windows Event Viewer on the VM and specifically targets Audit Failures with Event ID 4625, which indicates a failed login attempt. The script collects relevant information from these failed login attempts and exports it to a JSON log file in a format recognized by Azure.
+<b>Following, I created a custom PowerShell script to be used on the virtual machine utilizing AI. The script interacts with the Windows Event Viewer on the VM and specifically targets Audit Failures with Event ID 4625, which indicates a failed login attempt. The script collects relevant information from these failed login attempts and exports it to a JSON file recognized by Azure Sentinel.
       <p align="center">
-The script extracts the collected information from Windows Event Viewer and organizes it into corresponding tables for further analysis. Additionally, the script leverages an API (shown below) that provides geolocation capabilities, allowing the script to determine the latitude and longitude of the attack sources. The log file that is created from this script is then utilized as a sample file in the Log Analytics Workspace.</b>
+The script extracts the collected information from Windows Event Viewer and leverages an API to provide geolocation capabilities, determining the latitude and longitude of the attack sources.</b>
 </br>   
     <img src="https://imgur.com/LxkZykA.png" height="70%" width="70%" alt="Custom Powershell Script"/>
       </p>
@@ -58,4 +58,4 @@ After successfully pulling the tables, I utilized the world map visualization fe
    <img src="https://i.postimg.cc/G20G3zsc/attacks.png" height="80%" width="80%" alt="world map"/> <br />
 <b> Almost instantly, an abundance of brute-force attempts were received. Leveraging visualizations to portray attacks by magnitude was crucial, and it provided a clear understanding of the threat landscape, trends, and patterns.
    </p>
-   <p>This project proved to be challenging as I faced multiple roadblocks throughout. Providing ChatGPT 3 with a prompt in which it would create a functional powershell script and query was definitely one of them. Honeypots prove to be an efficient way of attracting attackers and in doing so, learning from their tactics, techniques, and procedures. From behavorial analysis defenders can better prepare their organization from threat actors and better secure data residing on systems. </p>
+   <p>Honeypots prove to be a safe, effective way of proactively gathering threat intelligence and analyzing threat actors tactics, techniques, and procedures (TTPs). With the rising implementation of AI into security solutions, this provides an insight into one way AI can be leveraged for data visualization and influence strategic decisions.</p>
