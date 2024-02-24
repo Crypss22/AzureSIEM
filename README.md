@@ -1,15 +1,11 @@
 <h1>Azure Honeypot   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdclipartall.com%2Fimages%2Fhoney-clipart-honey-bank-vector-illustrations-vector-art-illustration-612x516.jpg&f=1&nofb=1&ipt=783ee1997d3312abcdab10930461c1965fc07d1da03794365028bdeb2a8c6898&ipo=images" alt="Image Description" width="150" height="100">
 </h1>
-
-   This project consisted of utilizing Microsoft Azure's SIEM platform, Sentinel, to monitor brute-force attacks onto a vulnerable virtual machine and further analyze them through log analytics. These attacks were then visualized through the use of a geographical dashboard. <br />
-   
-   </br>
-
-<h2>Utilities Used</h2>
-
-- <b>Microsoft Sentinel</b>
-
-<h2>Environments Used </h2>
+In cybersecurity, threat intelligence is crucial to enhancing the capabilities of security solutions. Threat intelligence resources such as the MITRE ATT&CK framework provide a knowledge base to understand threat actors tactics, techniques, and procedures. In developing an understanding of new exploitation methods, honeypots serve as an invaluable tool in doing so. 
+<br>
+</br>
+In this project, I deploy a virtual machine whose security configurations are weakened and ultimately susceptible to threat actors. I leverage AI and geolocation to create a dashboard and provide a means of visualizing the origin of attacks. Through this, we can conduct further research on indicators of compromise and block network traffic from malicious IP addresses, investigate credentials being used, and more.
+ <br />
+<h2>Environment Used</h2>
 
 - <b>Windows 11</b>
 
