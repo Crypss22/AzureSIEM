@@ -51,7 +51,7 @@ After successfully pulling the tables, I utilized the world map visualization fe
 <br />
 <br />
 <p align="center">
-   <img src="https://i.postimg.cc/G20G3zsc/attacks.png" height="80%" width="80%" alt="world map"/> <br />
+   <img src="https://imgur.com/JqFfFuM.png" height="80%" width="80%" alt="world map"/> <br />
 <b> Almost instantly, an abundance of brute-force attempts were received. Leveraging visualizations to portray attacks by magnitude was crucial, and it provided a clear understanding of the threat landscape, trends, and patterns.
    </p>
    <p>Honeypots prove to be a safe, effective way of proactively gathering threat intelligence and analyzing threat actors tactics, techniques, and procedures (TTPs). With the rising implementation of AI into security solutions, this provides an insight into one way AI can be leveraged for data visualization and influence strategic decisions.</p>
