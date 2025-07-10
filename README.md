@@ -13,18 +13,18 @@ In this project, I deploy a virtual machine whose security configurations are we
 
 <p align="center">
    <b>A resource group was created, linking the Virtual Machine and the Log Analytics Workspace together.</b>
-<img src="https://imgur.com/F3A34ci.png" height="100%" width="100%" alt="Resource Group"/>                                                 
+<img src="https://imgur.com/F3A34ci.png" height=700 width=700 alt="Resource Group"/>                                                 
       </p>
    <br />
 <p align="center">
 <b>In the VM's settings on Azure, I configured the firewall to allow traffic on all ports.</b>
 <br/>
-<img src="https://imgur.com/yedIVhl.png" height="40%" width="40%" alt="Custom Inbound Rule"/>
+<img src="https://imgur.com/yedIVhl.png" height=700 width=700 alt="Custom Inbound Rule"/>
       </p>
       <p align="center">
       <b>And on the Windows VM itself, disabled the firewall to allow ICMP echo requests, making it discoverable, and baiting all threat actors looking for some low-hanging fruit.</b> 
 <br/>
-<img src="https://imgur.com/PUo4NVP.png" height="80%" width="80%" alt="VM linked to LAW"/>
+<img src="https://imgur.com/PUo4NVP.png" height=700 width=700 alt="VM linked to LAW"/>
       </p>
 <br/>
 <br/>
@@ -33,10 +33,10 @@ In this project, I deploy a virtual machine whose security configurations are we
       <p align="center">
 The script extracts the collected information from Windows Event Viewer and leverages an API to provide geolocation capabilities, determining the latitude and longitude of the attack sources.</b>
 </br>   
-    <img src="https://imgur.com/LxkZykA.png" height="70%" width="70%" alt="Custom Powershell Script"/>
+    <img src="https://imgur.com/LxkZykA.png" height=700 width=700 alt="Custom Powershell Script"/>
       </p>
       <p align="center">
-<img src="https://imgur.com/68u14nf.png" height="50%" width="50%" alt="API"/>
+<img src="https://imgur.com/68u14nf.png" height=700 width=700 alt="API"/>
       </p>
 <br />
 <br />
@@ -47,11 +47,11 @@ The script extracts the collected information from Windows Event Viewer and leve
 After successfully pulling the tables, I utilized the world map visualization feature offered by the workbook. By mapping the attack sources based on their latitude and longitude coordinates, I was able to represent the data geographically. To provide a clearer perspective, I adjusted the size of the plotted markers based on the number of attacks originating from each general area and country.
    </b> <br/>
    </p>
-<img src="https://imgur.com/Ho9iToa.png" height="80%" width="80%" alt="law query"/>
+<img src="https://imgur.com/Ho9iToa.png" height=700 width=700 alt="law query"/>
 <br />
 <br />
 <p align="center">
-   <img src="https://imgur.com/JqFfFuM.png" height="80%" width="80%" alt="world map"/> <br />
+   <img src="https://imgur.com/JqFfFuM.png" height=700 width=700 alt="world map"/> <br />
 <b> Almost instantly, an abundance of brute-force attempts were received. Leveraging visualizations to portray attacks by magnitude was crucial, and it provided a clear understanding of the threat landscape, trends, and patterns.
    </p>
    <p>Honeypots prove to be a safe, effective way of proactively gathering threat intelligence and analyzing threat actors tactics, techniques, and procedures (TTPs). With the rising implementation of AI into security solutions, this provides an insight into one way AI can be leveraged for data visualization and influence strategic decisions.</p>
